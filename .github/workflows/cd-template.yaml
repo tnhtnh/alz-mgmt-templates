@@ -56,7 +56,7 @@ jobs:
         shell: pwsh
 
       - name: Publish Module Artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: module
           path: ./staging/
@@ -83,7 +83,7 @@ jobs:
 
     steps:
       - name: Download a Build Artifact
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: module
 
