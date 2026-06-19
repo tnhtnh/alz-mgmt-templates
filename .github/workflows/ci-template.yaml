@@ -11,7 +11,7 @@ jobs:
     environment: alz-mgmt-plan
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v4
@@ -73,7 +73,7 @@ jobs:
       ARM_USE_OIDC: true
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v4
